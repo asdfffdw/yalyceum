@@ -5,7 +5,7 @@ if lpasswrd < 8:
     print('Короткий!')
     quit()
 elif '123' in password1:
-    print('Простой')
+    print('Простой!')
 elif password1 != password2:
     print('Различаются.')
 else:
