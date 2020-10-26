@@ -1,8 +1,10 @@
-number_of_lines = int(input())
-for i in range(0, number_of_lines):
-    line = input()
-    if 'Кот' or 'кот' in line:
+x = int(input())
+i = 1
+while i <= x:
+    i += 1
+    y = input()
+    if 'Кот' in y or 'кот' in y:
         print('МЯУ')
-        break
-    else:
-        print('НЕТ')
+        exit()
+if 'кот' not in y or "Кот" not in y:
+    print("НЕТ")
