@@ -1,15 +1,13 @@
-num = 1000
-print('500')
-while True:
+ln = 0
+rn = 1001
+x = 1
+while x != 0:
+    num = (ln + rn) // 2
+    print(num)
     use = input()
-    if use == '<':
-        num = num - (num / 2)
-        print(round(num))
-    elif use == '>':
-        num = num + (num / 2)
-        print(round(num))
+    if use == "<":
+        rn = num
+    elif use == ">":
+        ln = num
     elif use == '=':
-        print(round(num))
-        exit()
-    else:
-        print('Неверный ввод, попробуйте еще раз')
+        x -= 1
