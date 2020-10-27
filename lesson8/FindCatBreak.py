@@ -8,3 +8,4 @@ while i <= x:
 		break
 if not ('кот' in y) or ('Кот' in y):
 	print("НЕТ")
+print()
