@@ -1,12 +1,15 @@
-line = 0
-word = input()
-for i in range(10):
-	word = input()
-	if word == 'СТОП':
-		break
-	line += 1
-if 'КОТ' or 'кот' in word:
-	print('МЯУ')
-	print(line)
+cat_in_phrase = False
+count = 0
+phrase = ''
+while phrase != 'СТОП':
+    phrase = input()
+    count += 1
+    while not (cat_in_phrase):
+        if ('Кот' in phrase) or ('кот' in phrase):
+            cat_in_phrase = True
+            number = count
+        break
+if cat_in_phrase:
+    print(number)
 else:
-	print('-1')
+    print(-1)
