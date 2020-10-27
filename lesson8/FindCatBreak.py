@@ -1,11 +1,15 @@
 x = int(input())
-i = 1
-while i <= x:
-    i += 1
+for i in range(x):
     y = input()
-    if ('Кот' in y) or ('кот' in y):
+    if 'Кот' in y or 'кот' in y:
         print('МЯУ')
+        x = True
         break
-if not ('кот' in y) or ('Кот' in y):
-    print("НЕТ")
-
+    elif not 'Кот' and 'кот' in y:
+        print('НЕТ')
+        x = False
+        continue
+if x is True:
+    exit()
+else:
+    print('НЕТ')
