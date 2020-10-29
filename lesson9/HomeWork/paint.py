@@ -1,0 +1,6 @@
+h = int(input())
+w = int(input())
+symb = input()
+print(symb * w)
+print((symb + ' ' * (w - 2) + symb + '\n') * (h - 2), end='')
+print(symb * w)
