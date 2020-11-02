@@ -1,6 +1,6 @@
 n = int(input())
 while True:
-    a = n - (((n - 2) // 3) * 3 + 1)
+    a = n % 4 if n % 4 else 1
     if n < 3:
         a = n
     if a < 1:
