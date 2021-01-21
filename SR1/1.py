@@ -1,4 +1,8 @@
-word = list(input())
-new = input()
-if len(word) in len(new) >= 4:
-    print(new.split(' -- '))
+def polite_input(question):
+    global name
+    if name == '':
+        name = input('Как вас зовут?\n')
+    return input(f'{name}, {question}\n')
+
+
+name = ''
